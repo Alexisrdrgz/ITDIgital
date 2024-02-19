@@ -1,0 +1,46 @@
+---
+import { useSanityClient } from "astro-sanity";
+import PortableText from "../../components/PortableText.astro";
+import PageWrapper from "../../layouts/PageWrapper.astro";
+import { urlForImage } from "../../sanity/urlForImage";
+
+type Post = { title: string; slug: { current: "" } };
+
+export async function getStaticPaths() {
+  const posts = await useSanityClient().fetch(`*[_type == "post"]`);
+
+  return posts.map((post: Post) => {
+    return {
+      params: {
+        slug: post.slug?.current || "",
+      },
+      props: { ...post },
+    };
+  });
+}
+
+const { title, body, mainImage, description } = Astro.props;
+---
+
+<style>
+  .page-title {
+    margin: 4rem 0 1rem;
+  }
+</style>
+<PageWrapper title={title} description={description}>
+  <div class="container">
+    <h1 class="page-title">{title}</h1>
+    {
+      mainImage ? (
+        <img
+          class="post__cover"
+          src={urlForImage(mainImage.asset).format("webp").url()}
+          alt="Cover image"
+        />
+      ) : (
+        <div class="post__cover--none" />
+      )
+    }
+    <PortableText portableText={body} />
+  </div>
+</PageWrapper>
