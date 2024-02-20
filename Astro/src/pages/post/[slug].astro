@@ -8,7 +8,6 @@ type Post = { title: string; slug: { current: "" } };
 
 export async function getStaticPaths() {
   const posts = await useSanityClient().fetch(`*[_type == "post"]`);
-
   return posts.map((post: Post) => {
     return {
       params: {
@@ -17,6 +16,7 @@ export async function getStaticPaths() {
       props: { ...post },
     };
   });
+
 }
 
 const { title, body, mainImage, description } = Astro.props;
