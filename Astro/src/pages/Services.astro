@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Service from "../components/cards/Service.astro";
+import Container from "../components/shared/Container.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+import Title from "../components/shared/Title.astro";
+import { services } from "../utils/data";
+import CTA from "../components/sections/CTA.astro";
+
+type ServicesProps = {
+    title: string;
+    description: string;
+    icon: string
+};
+---
+
+<Layout title="Servicios" >
+
+
+<section id="services">
+    <Container className="space-y-10 md:sapce-y-12 mt-36" >
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <Title>
+                Tecnologias Digitales emergentes
+            </Title>
+            <Paragraph>
+                Temas que consideramos de gran importancia para el desarrollo de la sociedad y el bienestar de las personas.
+            </Paragraph>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 ">
+            {
+                    services.map((service: ServicesProps) => {
+                    return (
+                            <Service title={service.title} description={service.description} icon={service.icon}>
+                            </Service>
+                            );
+                    })
+            }
+        </div>
+    </Container>
+    <div class="mt-24">
+    <CTA /></div>
+</section>
+</Layout>

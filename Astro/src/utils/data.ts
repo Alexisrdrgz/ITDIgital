@@ -20,7 +20,7 @@ const services = [
   {
     title: "Nube (Cloud)",
     description:
-      "Sunt, ipsam, necessitatibus sint fugit officia laboriosam minima ab ullam at magni et. Quaerat, sint!",
+      "La nube permite que toda la información de una empresa este centralizada e integrada, y ésta es una de las herramientas más utilizadas para mantener la información actualizada y disponible en cada momento para su uso.",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-computing" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M6.657 16c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" />
@@ -32,7 +32,7 @@ const services = [
   {
     title: "Movilidad",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti qui soluta cupiditate",
+      "Esta considerada como una tendencia que permite a los equipos de trabajo y empleados de una organización empresarial a trabajar en cualquier momento desde cualquier lugar, a través de los dispositivos móviles o en la nube con el objetivo de cumplir con las actividades y gestiones diarias de las empresas. ",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
@@ -43,7 +43,7 @@ const services = [
   {
     title: "Internet de las cosas (IoT)",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti qui soluta cupiditate",
+      "Básicamente todas las cosas están interconectadas a través de internet con el fin de mejorar la calidad de vida de los humanos. Las personas cada vez están más ocupadas con la cantidad de dispositivos que se crean y es muy difícil darle seguimiento a todo, las TD vienen para hacer más eficientes nuestros trabajos.",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-network" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M3 20h7" />
@@ -56,7 +56,7 @@ const services = [
   {
     title: "Analisis de datos",
     description:
-      "Sunt, ipsam, necessitatibus sint fugit officia laboriosam minima ab ullam at magni et. Quaerat, sint!",
+      "Esta herramienta facilita que la organización mejore la información que tiene disponible para la toma de decisiones. Convertir los datos de aplicaciones en representaciones visuales ayuda a  los clientes a describir conceptos, descubrir oportunidades, explorar opciones y llegar a tomar decisiones más optimas para el beneficio de las organizaciones. ",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-analytics" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -69,7 +69,7 @@ const services = [
   {
     title: "Inteligencia artificial (IA)",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti qui soluta cupiditate",
+      "La inteligencia artificial en sus sentido más natural, está referida al modo de simular las capacidades de la inteligencia del cerebro humano por lo que pensar en ella es también pensar en lo que nos hace posible interactuar y aprender, por lo tanto sus aplicaciones puede contribuir enormemente a la educación.",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-topology-star-ring-3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M10 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />

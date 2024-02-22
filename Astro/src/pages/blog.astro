@@ -20,31 +20,40 @@ const posts = await useSanityClient().fetch(`*[_type == "post"]`);
 
 <style>
   .page-title {
-    margin: 4rem 0 1rem;
+    margin: 6rem 0 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
   }
-
+  
   .blogs-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
   }
 
   .blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
     text-decoration: none;
-    color: unset;
-    overflow: hidden;
   }
 
   .blog-image {
     width: 100%;
-    scale: 1.1;
-    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
   }
+
 
   .blog-title {
     font-size: 18px;
     transition: all 0.3s ease;
     font-weight: 500;
+    color: black;
   }
 
   .blog-post:hover .blog-title {
@@ -52,9 +61,10 @@ const posts = await useSanityClient().fetch(`*[_type == "post"]`);
   }
 </style>
 
+
 <PageWrapper title="Home" description="Blog home page">
   <div class="container">
-    <h1 class="page-title">Blogs</h1>
+    <h1 class="page-title">Blog</h1>
     {
       posts && (
         <div class="blogs-list">
